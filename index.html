@@ -7,33 +7,44 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            background-color: #000; /* Black background */
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
             margin: 0;
+            flex-direction: column; /* Stack items vertically */
+        }
+        .logo {
+            margin-bottom: 20px;
+        }
+        .logo img {
+            width: 300px; /* Adjust the size of the image */
+            height: auto;
         }
         .login-container {
-            background: #fff;
+            background: #222; /* Dark gray container */
             padding: 20px;
             border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
             width: 300px;
             text-align: center;
         }
         .login-container h1 {
+            color: #fff;
             margin-bottom: 20px;
         }
         .login-container input {
             width: 100%;
             padding: 10px;
             margin: 10px 0;
-            border: 1px solid #ddd;
+            border: 1px solid #444;
             border-radius: 5px;
+            background: #333;
+            color: #fff;
         }
         .login-container button {
-            background: #007BFF;
+            background: #e91e63; /* Pink button */
             color: #fff;
             padding: 10px;
             border: none;
@@ -41,11 +52,14 @@
             cursor: pointer;
         }
         .login-container button:hover {
-            background: #0056b3;
+            background: #c2185b;
         }
     </style>
 </head>
 <body>
+    <div class="logo">
+        <img src="youkok_logo.png" alt="Youkok Logo">
+    </div>
     <div class="login-container">
         <h1>Login</h1>
         <form id="loginForm">
