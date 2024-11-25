@@ -19,52 +19,52 @@
             margin-top: 20px; /* Space at the top of the page */
         }
         .logo img {
-            width: 300px; /* Adjust the size of the image */
+            width: 360px; /* 20% larger */
             height: auto;
         }
         .warning-text {
             margin-top: 10px;
-            font-size: 18px;
+            font-size: 21.6px; /* 20% larger than 18px */
             font-weight: bold;
             text-align: center;
             color: #e91e63; /* Warning in pink */
         }
         .login-container {
-            margin-top: 20px; /* Space between warning and login box */
+            margin-top: 24px; /* 20% larger margin */
             text-align: center;
         }
-        .password-container {
+        .input-container {
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-top: 20px;
+            margin-top: 24px; /* 20% larger margin */
         }
-        .password-container label {
-            font-size: 16px;
+        .input-container label {
+            font-size: 19.2px; /* 20% larger than 16px */
             font-weight: bold;
-            margin-right: 10px;
+            margin-right: 12px; /* 20% larger margin */
         }
-        .password-container input {
-            padding: 10px;
+        .input-container input {
+            padding: 12px; /* 20% larger padding */
             border: 1px solid #444; /* Subtle border to make it visible */
-            border-radius: 5px;
+            border-radius: 6px; /* 20% larger */
             background: #000; /* Blend with the black background */
             color: #fff;
-            font-size: 16px;
+            font-size: 19.2px; /* 20% larger font */
         }
-        .password-container input:focus {
+        .input-container input:focus {
             outline: none;
             border-color: #e91e63; /* Pink border on focus */
         }
         .login-container button {
             background: #e91e63; /* Pink button */
             color: #fff;
-            padding: 10px 20px;
+            padding: 12px 24px; /* 20% larger padding */
             border: none;
-            border-radius: 5px;
+            border-radius: 6px; /* 20% larger */
             cursor: pointer;
-            font-size: 16px;
-            margin-top: 20px;
+            font-size: 19.2px; /* 20% larger font */
+            margin-top: 24px; /* 20% larger margin */
         }
         .login-container button:hover {
             background: #c2185b;
@@ -80,11 +80,11 @@
     </div>
     <div class="login-container">
         <form id="loginForm">
-            <div class="password-container">
-                <label for="password">INDØK ER ....:</label>
-                <input type="password" id="password" placeholder="Enter password" required>
+            <div class="input-container">
+                <label for="inputField">INDØK ER ....</label>
+                <input type="text" id="inputField" placeholder="Enter text here" required>
             </div>
-            <button type="submit">Login</button>
+            <button type="submit">Shalalala</button>
         </form>
     </div>
 
@@ -92,7 +92,7 @@
         document.getElementById("loginForm").addEventListener("submit", function(event) {
             event.preventDefault(); // Prevent form submission
             // Replace the URL below with your desired Google Presentation or PowerPoint Online URL
-            window.location.href = "https://docs.google.com/presentation/d/your-presentation-id/edit";
+            window.location.href = "https://docs.google.com/presentation/d/1M0F8v9hiMJ3AKurcsXNLdNb8Qjr7VQywDbiL5HzG38o/edit?usp=sharing";
         });
     </script>
 </body>
